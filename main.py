@@ -5,8 +5,8 @@ __human_name__ = 'strings'
 # Add your code after this line
 
 #Part 1
-scorer_1 = 'Gullit'
-scorer_2 = 'Van Basten'
+scorer_1 = 'Ruud Gullit'
+scorer_2 = 'Marco van Basten'
 
 goal_0 = 32
 goal_1 = 54
@@ -28,13 +28,13 @@ last_name = player[space_position+1:]
 last_name_len = len(last_name)
 print(last_name_len)
 
-
 name_short = player[0] + '.' + ' ' + last_name 
 print(name_short)
 
-chant = (first_name + '!' + ' ') * len(first_name)   
+x = len(first_name)-1 
+chant = (x * (first_name + '!' + ' ') + (first_name + '!'))  
 print(chant)
 
 #print(good_chant)
-good_chant = chant[-1] != '' 
+good_chant = chant[-1] != ' ' 
 print(good_chant)
